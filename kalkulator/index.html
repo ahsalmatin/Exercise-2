@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview" readonly>
+        </form>
+        <table>
+            <tr>
+            <td colspan="4"><input class="button" type="button" value="DEL" onclick="btnClear()"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="document.form.textview.value +='7'"></td>
+                <td><input class="button" type="button" value="8" onclick="document.form.textview.value +='8'"></td>
+                <td><input class="button" type="button" value="9" onclick="document.form.textview.value +='9'"></td>
+                <td><input class="button" type="button" value="/" onclick="btnDivided('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="document.form.textview.value +='4'"></td>
+                <td><input class="button" type="button" value="5" onclick="document.form.textview.value +='5'"></td>
+                <td><input class="button" type="button" value="6" onclick="document.form.textview.value +='6'"></td>
+                <td><input class="button" type="button" value="*" onclick="btnTimes('*')"></td>
+            
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="document.form.textview.value +='1'"></td>
+                <td><input class="button" type="button" value="2" onclick="document.form.textview.value +='2'"></td>
+                <td><input class="button" type="button" value="3" onclick="document.form.textview.value +='3'"></td>
+                <td><input class="button" type="button" value="-" onclick="btnMinus('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="0" onclick="document.form.textview.value +='0'"></td>
+                <td><input class="button" type="button" value="." onclick="btnDot('.')"></td>
+                <td><input class="button" type="button" value="=" onclick="document.form.textview.value = eval(document.form.textview.value)"></td>
+                <td><input class="button" type="button" value="+" onclick="btnPlus('+')"></td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="calculation.js"></script>  
+
+    </div>  
+  
+</body>
+
+</html>
